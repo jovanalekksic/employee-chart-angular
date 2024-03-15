@@ -26,3 +26,7 @@ table,th,td {
   .highlight {
     background-color: pink;
   }
+  .piechart{
+    width: 500px;
+    margin-left: 25%;
+  }
