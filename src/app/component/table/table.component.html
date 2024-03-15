@@ -1,0 +1,18 @@
+<div class="table">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th id="center">Total Time in Month</th>
+                <th id="center">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let employee of employees " [ngClass]="{'highlight': employee.TotalHours < 100}">
+                <td>{{ employee.EmployeeName }}</td>
+                <td id="center">{{ employee.TotalHours+" hrs"}}</td>
+                <td id="center"><a href="" id="link">Edit</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
